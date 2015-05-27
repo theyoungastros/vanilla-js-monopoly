@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+    <title>Monopoly</title>
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+    <div class="dice" id="dice">
+        <div class="die one" id="die-1"><span class="dot"></span></div>
+        <div class="die one" id="die-2"><span class="dot"></span></div>
+    </div>
+
+    <label style="position: fixed; top:0; left:0; display:none; z-index:100;"><input type="checkbox" id="force-doubles" />Force Doubles</label>
+
+    <div id="actions">
+        <input type="button" value="Roll" id="btn-roll">
+        <input type="button" value="Finish Turn" id="btn-finish"><br />
+        <input type="button" value="Buy Houses" id="btn-houses">
+        <input type="button" value="Sell Houses" id="btn-houses-sell"><br />
+        <input type="button" value="Mortgage" id="btn-mortgage">
+        <input type="button" value="Unmortgage" id="btn-unmortgage"><br />
+        <input type="button" value="Trade" id="btn-trade">
+        <input type="button" value="Pay $50" id="btn-jail-pay">
+        <input type="button" value="Jail Card" id="btn-jail-card">
+    </div>
+
+    <div id="message">Loading</div>
+
+    <div id="player-info"></div>
+    <div id="property-info"></div>
+
+    <div id="board"></div>
+    <div id="dialog"></div>
+
+
+    <script src="js/prototypes.js"></script>
+    <script src="js/debug.js"></script>
+    <script src="js/models.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/logic.js"></script>
+    <script src="js/ui.js"></script>
+
+</body>
+</html>
